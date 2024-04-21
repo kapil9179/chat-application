@@ -21,16 +21,15 @@ ConfigDB();
 
 // middlewers
 // setup development and production enviorment
-server.use(
-  if(process.env.NODE_ENV === "development"){
-  cors({
-    origin: "http://localhost:5173",
-    methods: ["get", "post", "put", "patch", "delete"],
-    credentials: true,
-  })else{
-   server.use(cors())
+if(process.env.NODE_ENV === "development"){
+  server.use(cors({
+    origin:"http://localhost:5173",
+    methods:["get", "post","delete", "put", "patch"],
+    credentials:true
+  }
+}else{
+  server.use(cors())
 }
-);
 
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
