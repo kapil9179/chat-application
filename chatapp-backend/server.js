@@ -20,13 +20,18 @@ const io = socketIo(httpserver, {
 ConfigDB();
 
 // middlewers
+// setup development and production enviorment
 server.use(
+  if(process.env.NODE_ENV === "development"){
   cors({
     origin: "http://localhost:5173",
     methods: ["get", "post", "put", "patch", "delete"],
     credentials: true,
-  })
+  })else{
+   server.use(cors())
+}
 );
+
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use("/api", Router);
