@@ -1,0 +1,54 @@
+.card {
+  position: absolute;
+  right: 0;
+  z-index: 2000;
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+/* input card */
+
+.InputContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.input {
+  width: 400px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 35px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+
+.card li{
+  width:fit-content;
+   height: 30px;
+  list-style: none;
+  margin:10px 0 0 10px;
+  background-color: bisque;
+  line-height: 1;
+  padding: 5px;
+  border-radius: 10px;
+}
+.searchwithname{
+  color:rgb(0,0,0,0.2);
+  margin:10px 0 0 10px;
+  font-weight: 600;
+}

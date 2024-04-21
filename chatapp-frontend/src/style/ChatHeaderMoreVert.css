@@ -1,0 +1,35 @@
+/* .morevertlist{
+  width:300px;
+  height:300px;
+  border:2px solid gray;
+  background-color: burlywood;
+  z-index:20000;
+  margin:5px;
+  position: absolute;
+  right: 0;
+} */
+
+.morevertlist{
+    width:200px;
+    height:250px;
+    background-color: #F0F8FF;
+    z-index:20000;
+    margin:5px;
+    position: absolute;
+    right: 0; 
+    transition: right 1s ease-out; 
+    color:black;
+  }
+.morevertlist li{
+    padding:10px 0 0 10px;
+    list-style: none;
+}
+
+
+  
+  .morevertlist li:hover {
+    background-color: #ddd; 
+  }
+  
+  
+  
